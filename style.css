@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
 :root {
-    --main--color: #e38528;
+    --main--color: #dc3545;
 }
 
 * {
@@ -28,8 +28,8 @@ section {
 }
 
 body {
-    background: #fcf2e8;
-    padding-left: 30rem;
+    background: white;
+    padding-left: 25rem;
 }
 
 header {
@@ -45,14 +45,14 @@ header {
     flex-flow: column;
     padding: 8rem 2rem;
     text-align: center;
-    width: 30rem;
+    width: 25rem;
 
 }
 
 header .logo {
     text-transform: uppercase;
     color: #fff;
-    font-size: 3rem;
+    font-size: 2.7rem;
     font-weight: bolder;
 }
 
@@ -308,6 +308,12 @@ header .follow a:hover {
 
 .members{
     margin-bottom: 9rem;
+}
+
+.members .content .info {
+    font-size: 2.5rem;
+    color: #111;
+    padding: 0.5rem 0;
 }
 
 .members .box-container{
