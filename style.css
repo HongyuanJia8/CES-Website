@@ -102,7 +102,6 @@ header .follow a:hover {
 
 .home .content .hi {
     font-size: 2.5rem;
-    color: var(--main--color)
 }
 
 .home .content h3 {
@@ -311,7 +310,7 @@ header .follow a:hover {
 }
 
 .members .content .info {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     color: #111;
     padding: 0.5rem 0;
 }
