@@ -201,19 +201,19 @@ header img{
     color: var(--main--color)
 }
 
-.members .box-container ul{
+.members .member-navbar ul{
     position: relative; 
     display: flex; 
     justify-content: center;
     align-items: center;
 }
 
-.members .box-container ul li{
+.members .member-navbar ul li{
     position: relative; 
     list-style:none; 
 }
 
-.members .box-container ul li a{
+.members .member-navbar ul li a{
     position: relative; 
     margin: 0 15px; 
     color:black; 
@@ -223,7 +223,79 @@ header img{
     font-size: 1.8rem; 
 }
 
+.departments{
+    padding: 5rem 0 0; 
+}
 
+#departmentContainer{
+    text-align: center;
+}
+
+.departmentTitle{
+    display: block;
+    font-size: 1.75em;
+    line-height: 1.2;
+    writing-mode: horizontal-tb;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-top: 0;
+}
+
+.membersCards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    margin: 0.5rem;
+    position: relative;
+    display: flex;
+
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.25rem;
+
+}
+
+.parent-card{
+    height: 250px;
+    position: relative;
+    width: 190px;
+}
+
+.member-card{
+    background-color: #121212;
+    border: thin solid gray;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    height: 250px;
+    margin: 0 auto;
+    opacity: 1;
+    padding: 25px;
+    text-align: center;
+    transition: .5s ease;
+    width: 190px;
+}
+
+.profile-card{
+    display: flex;
+    flex-direction: column;
+}
+
+#member-image{
+    border-radius: 50%;
+    max-width: 100%;
+    object-fit: contain;
+    padding-bottom: 0;
+}
 .members .content .info {
     font-size: 1.5rem;
     color: #111;
