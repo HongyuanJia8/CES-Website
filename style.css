@@ -49,18 +49,6 @@ header {
 
 }
 
-header .logo {
-    text-transform: uppercase;
-    color: #fff;
-    font-size: 2.7rem;
-    font-weight: bolder;
-}
-
-header .logo span {
-    text-transform: uppercase;
-    color: var(--main--color)
-}
-
 header .navbar a {
     display: block;
     /*自動換行*/
@@ -84,10 +72,31 @@ header .follow a {
 
 }
 
-header .follow a:hover {
-    -letter-spacing: 0.2rem;
-    color: var(--main--color)
+header .follow a:hover:nth-child(1) {
+    letter-spacing: 0.2rem;
+    color: #fd5949;
+    /*  https://stackoverflow.com/questions/70853065/instagram-icon-with-hover-effect */
 }
+
+header .follow a:hover:nth-child(2) {
+    letter-spacing: 0.2rem;
+    color: #1AAD19;
+}
+
+header .follow a:hover:nth-child(3) {
+    letter-spacing: 0.2rem;
+    color: #00AEEC;
+}
+header .follow a:hover:nth-child(4) {
+    letter-spacing: 0.2rem;
+    color: #7289da;
+}
+
+header img{ 
+    width: 22em; 
+    padding-top: 1rem; 
+}
+
 
 .home {
     display: flex;
@@ -309,53 +318,6 @@ header .follow a:hover {
     margin-bottom: 9rem;
 }
 
-.members .content .info {
-    font-size: 1.5rem;
-    color: #111;
-    padding: 0.5rem 0;
-}
-
-.members .box-container{
-    display: flex; 
-    flex-wrap: wrap; 
-    gap: 1.5rem; 
-
-}
-
-.members .box-container .box{
-    flex: 1 1 30rem; 
-    text-align: center; 
-    padding: 2rem; 
-    background-color: #fff;
-    border-radius: 0.5rem;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-} 
-
-
-.members .box-container .box i{
-    height: 6rem;
-    width: 6rem;
-    line-height: 6rem;
-    font-size: 2.5rem;
-    color: #fff;
-    background-color: var(--main--color);
-    border-radius: 50%;
-}
-
-.members .box-container .box h3{
-    color: #444;
-    font-size: 2.2rem;
-    padding-top: 1rem;
-    text-transform: capitalize;
-}
-
-.members .box-container .box p{
-    color: #666;
-    font-size: 1.7rem;
-    padding-top: 0.5rem;
-    
-}
-
 .members h1{
     font-size: 4.5rem;
     color: #111;
@@ -365,6 +327,35 @@ header .follow a:hover {
 .members span{
     text-transform: uppercase;
     color: var(--main--color)
+}
+
+.members .box-container ul{
+    position: relative; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.members .box-container ul li{
+    position: relative; 
+    list-style:none; 
+}
+
+.members .box-container ul li a{
+    position: relative; 
+    margin: 0 15px; 
+    color:black; 
+    letter-spacing: 2px;
+    font-weight: 500px; 
+    transition: 0.6s; 
+    font-size: 2rem; 
+}
+
+
+.members .content .info {
+    font-size: 1.5rem;
+    color: #111;
+    padding: 0.5rem 0;
 }
 
 .gallery .heading{
@@ -377,57 +368,6 @@ header .follow a:hover {
 .gallery .heading span{
     text-transform: uppercase;
     color: var(--main--color)
-}
-
-.gallery .box-container{
-    display: flex; 
-    flex-wrap: wrap; 
-    gap: 1.5rem; 
-}
-
-.gallery .box-container .box{
-    position: relative;
-    flex: 1 1 33rem; 
-    border-left: .2rem solid var(--main--color);
-    padding-left: 2rem;
-    padding-right: 2rem; 
-    padding-bottom: 2rem; 
-}
-
-.gallery .box-container .box::before{
-    content: ''; 
-    position: absolute; 
-    top: 0; left: -1rem; 
-    height: 2rem; 
-    width: 2rem; 
-    border-radius: 50%; 
-    background-color: var(--main--color);
-}
-
-.gallery .box-container .box .content{
-    background: #fff; 
-    padding: 1.5rem; 
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-    border-radius: 0.5rem; 
-}
-
-.gallery .box-container .box .content span{
-    color: #fff; 
-    font-size: 2rem; 
-    background: var(--main--color);
-    border-radius: 0.5rem; 
-    padding: .4rem 1rem; 
-}
-
-.gallery .box-container .box .content h3{
-    font-size: 2.5rem; 
-    padding: 0.5rem 0; 
-    color: #111; 
-}
-
-.gallery .box-container .box .content p{
-    font-size: 1.5rem; 
-    color: #666; 
 }
 
 .events .heading{
