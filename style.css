@@ -4,7 +4,7 @@
     --main--color: #dc3545;
 }
 
-*{
+* {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
@@ -49,23 +49,22 @@ header {
 
 }
 
-.members-dropdown li{
+.members-dropdown li {
     display: block;
 }
 
-.members-dropdown{
-    list-style: none; 
-    padding-left: 9em; 
-    position: relative; 
-    z-index: 999; 
-    -display: none; 
+.members-dropdown {
+    list-style: none;
+    padding-left: 9em;
+    position: relative;
+    z-index: 999;
+    display: none;
 }
 
 header .navbar a:hover {
     letter-spacing: 0.2rem;
     color: var(--main--color)
-
-    /*這裡加上display initial的效果？*/ 
+        /*這裡加上display initial的效果？*/
 
 }
 
@@ -76,7 +75,7 @@ header .navbar a {
     color: #fff;
     margin: 0.2rem;
     text-transform: capitalize;
-    line-height:5rem; 
+    line-height: 5rem;
 
 }
 
@@ -102,14 +101,15 @@ header .follow a:hover:nth-child(3) {
     letter-spacing: 0.2rem;
     color: #00AEEC;
 }
+
 header .follow a:hover:nth-child(4) {
     letter-spacing: 0.2rem;
     color: #7289da;
 }
 
-header img{ 
-    width: 22em; 
-    padding-top: 1rem; 
+header img {
+    width: 22em;
+    padding-top: 1rem;
 }
 
 
@@ -173,8 +173,8 @@ header img{
     text-transform: uppercase;
 }
 
-.about .heading2{
-    font-size: 2.7rem; 
+.about .heading2 {
+    font-size: 2.7rem;
     text-transform: uppercase;
     color: #111;
 }
@@ -201,71 +201,71 @@ header img{
     display: none;
 }
 
-.members{
+.members {
     margin-bottom: 9rem;
 }
 
-.members h1{
+.members h1 {
     font-size: 4.5rem;
     color: #111;
     text-transform: uppercase;
 }
 
-.members span{
+.members span {
     text-transform: uppercase;
     color: var(--main--color)
 }
 
-.member-name{
-    font-size: 16px; 
+.member-name {
+    font-size: 16px;
 }
 
-#member-image{
-    border-radius: 50%; 
+#member-image {
+    border-radius: 50%;
     max-width: 80%;
     object-fit: contain;
     padding-bottom: 0;
 }
 
-.member-role{
+.member-role {
     color: gray;
     font-size: 13px;
     margin-top: 5px;
 }
 
 
-.members .member-navbar ul{
-    position: relative; 
-    display: flex; 
+.members .member-navbar ul {
+    position: relative;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.members .member-navbar ul li{
-    position: relative; 
-    list-style:none; 
+.members .member-navbar ul li {
+    position: relative;
+    list-style: none;
 }
 
-.members .member-navbar ul li a{
-    position: relative; 
-    margin: 0 15px; 
-    color:black; 
+.members .member-navbar ul li a {
+    position: relative;
+    margin: 0 15px;
+    color: black;
     letter-spacing: 2px;
-    font-weight: 500px; 
-    transition: 0.6s; 
-    font-size: 1.8rem; 
+    font-weight: 500px;
+    transition: 0.6s;
+    font-size: 1.8rem;
 }
 
 
-.departments{
-    padding: 5rem 0 0; 
+.departments {
+    padding: 5rem 0 0;
 }
 
-#departmentContainer{
+#departmentContainer {
     text-align: center;
 }
 
-.departmentTitle{
+.departmentTitle {
     display: block;
     font-size: 1.75em;
     line-height: 1.2;
@@ -277,13 +277,13 @@ header img{
     margin-top: 0;
 }
 
-.membersCards{
+.membersCards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.card{
+.card {
     margin: 0.5rem;
 
     position: relative;
@@ -296,18 +296,18 @@ header img{
     word-wrap: break-word;
     background-color: #fff;
     background-clip: border-box;
-    border: 1px solid rgba(0,0,0,.125);
+    border: 1px solid rgba(0, 0, 0, .125);
     border-radius: 0.25rem;
 
 }
 
-.parent-card{
+.parent-card {
     height: 250px;
     position: relative;
     width: 190px;
 }
 
-.member-card{
+.member-card {
     background-color: #121212;
     border: thin solid gray;
     border-radius: 5px;
@@ -322,113 +322,152 @@ header img{
     width: 190px;
 }
 
-.profile-card{
+
+.contact-card {
+    align-items: center;
+    background-color: #000;
+    border: thin solid gray;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    height: 250px;
+    justify-content: center;
+    left: 50%;
+    margin: 0 auto;
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: 1s ease;
+    width: 190px;
+}
+
+.contact-card a {
+    font-size: 3rem;
+    padding: 0 1rem;
+    text-decoration: none;
+    color: gray;
+}
+
+.parent-card:hover .profile-card {
+    opacity: 0.2;
+}
+
+.parent-card:hover .contact-card {
+    opacity: 0.6;
+}
+
+.profile-card {
     display: flex;
     flex-direction: column;
 }
 
 
-.members .img{
+.members .img {
     overflow-clip-margin: content-box;
     overflow: clip;
 }
+
 .members .content .info {
     font-size: 1.5rem;
     color: #111;
     padding: 0.5rem 0;
 }
 
-.gallery .heading{
+.gallery .heading {
     font-size: 4rem;
     padding-bottom: 1rem;
     color: #111;
     text-transform: uppercase;
 }
 
-.gallery .heading span{
+.gallery .heading span {
     text-transform: uppercase;
     color: var(--main--color)
 }
 
-.events .heading{
+.events .heading {
     font-size: 4rem;
     padding-bottom: 1rem;
     color: #111;
-    text-transform: uppercase; 
+    text-transform: uppercase;
 }
 
-.events .heading span{
+.events .heading span {
     text-transform: uppercase;
     color: var(--main--color);
 }
 
 
 
-.contact .icon-container{
-    display:flex; 
-    gap: 1.5rem; 
+.contact .icon-container {
+    display: flex;
+    gap: 1.5rem;
     flex-wrap: wrap;
 }
 
-.contact .heading{
+.contact .heading {
     font-size: 4rem;
     padding-bottom: 1rem;
     color: #111;
     text-transform: uppercase;
 }
 
-.contact .heading span{
+.contact .heading span {
     text-transform: uppercase;
     color: var(--main--color)
 }
 
-.contact .icon-container .icons{
-    flex: 1 1 25rem; 
+.contact .icon-container .icons {
+    flex: 1 1 25rem;
     text-align: center;
-    padding: 2rem; 
-    background-color: #fff; 
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
     border-radius: .5rem;
 }
 
-.contact .icon-container .icons i{
-    height: 5rem; 
-    width: 5rem; 
-    line-height: 5rem; 
-    font-size: 2rem; 
+.contact .icon-container .icons i {
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
     background-color: var(--main--color);
-    color: #fff; 
-    border-radius: 50%; /* .5rem: 橢圓稜角處理 50%: 圓形 */
+    color: #fff;
+    border-radius: 50%;
+    /* .5rem: 橢圓稜角處理 50%: 圓形 */
 }
 
-.contact .icon-container .icons a{
-    height: 5rem; 
-    width: 5rem; 
-    line-height: 5rem; 
-    font-size: 2rem; 
+.contact .icon-container .icons a {
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
     background-color: var(--main--color);
-    color: white; 
-    border-radius: 50%; /* .5rem: 橢圓稜角處理 50%: 圓形 */
+    color: white;
+    border-radius: 50%;
+    /* .5rem: 橢圓稜角處理 50%: 圓形 */
 }
 
-.contact .icon-container .icons a:hover{
-    height: 5rem; 
-    width: 5rem; 
-    line-height: 5rem; 
-    font-size: 2rem; 
-    color: black; 
+.contact .icon-container .icons a:hover {
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: black;
 }
 
-.contact .icon-container .icons h3{
-    color: #111; 
-    font-size: 2rem; 
+.contact .icon-container .icons h3 {
+    color: #111;
+    font-size: 2rem;
     padding: .5rem 0;
 }
 
-.contact .icon-container .icons p{
+.contact .icon-container .icons p {
     color: #666;
-    font-size: 1.7rem; 
-    padding: .5rem 0rem; 
+    font-size: 1.7rem;
+    padding: .5rem 0rem;
 }
 
 
@@ -467,7 +506,7 @@ header img{
         width: 100%;
     }
 
-    .experience .box-container .box{
+    .experience .box-container .box {
         padding-left: 0;
     }
 }
