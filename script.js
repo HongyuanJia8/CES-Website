@@ -10,3 +10,10 @@ menu.onscroll = () =>{
     menu.classList.remove('fa-times');
     header.classList.remove('active');
 }
+
+new Swiper('#memberslider',{
+    pagination:{
+        el: "#memberslider .swiper-pagination",
+        clickable: true
+    }
+}); 

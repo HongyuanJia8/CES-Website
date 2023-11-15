@@ -9,6 +9,8 @@
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css'
         target="_blank">
     <link rel="stylesheet" href='/style.css' target="_blank">
+    <link rel = 'stylesheet' href = 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css'/>
+   
 </head>
 
 <body>
@@ -24,13 +26,6 @@
             <a href='#home'>home</a>
             <a href='#about'>about us</a>
             <a href='#members'>Members</a>
-            <ul class='members-dropdown'>
-                <li><a href='#'>主席團</a></li>
-                <li><a href='#'>學術部</a></li>
-                <li><a href='#'>職業發展部</a></li>
-                <li><a href='#'>媒體部</a></li>
-                <li><a href='#'>人事部</a></li>
-            </ul>
             <a href='#gallery'>Gallery</a>
             <a href='#events'>Events</a>
             <a href='#contact'>Contact Us</a>
@@ -61,6 +56,7 @@
     <!--home section end-->
 
     <!--About section starts-->
+    <!---->
     <section class='about' id='about'>
         <h1 class='heading'>About<span> us</span></h1>
 
@@ -69,7 +65,9 @@
     </section>
     <!--About section ends-->
 
-    <!--Service Section Starts-->
+    <!--members Section Starts-->
+
+
     <section class='members' id='members'>
         <div class='content'>
             <h1 class='heading'><span>Our </span>Members</h1>
@@ -86,7 +84,29 @@
                             <div class='member-card'>
                                 <div class='profile-card'>
                                     <div class='card-top'>
-                                        <img src="paulImg.jpg" alt="member" id="member-image" class="member-image">
+                                        <img src="membersImage/paulImg.jpg" alt="member" id="member-image" class="member-image">
+                                    </div>
+                                    <div class='card-bottom'>
+                                        <div class="member-name">Paul Lai</div>
+                                        <div class="member-role">主席團</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class='contact-card'>
+                                <a href='' class='fa-regular fa-envelope'></a>
+                                <a href='' class='fa-brands fa-linkedin'></a>
+                                <a href='' class='fa-brands fa-github'></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='card'>
+                        <div class='parent-card'>
+                            <div class='member-card'>
+                                <div class='profile-card'>
+                                    <div class='card-top'>
+                                        <img src="membersImage/paulImg.jpg" alt="member" id="member-image" class="member-image">
                                     </div>
                                     <div class='card-bottom'>
                                         <div class="member-name">Paul Lai</div>
@@ -108,7 +128,7 @@
                             <div class='member-card'>
                                 <div class='profile-card'>
                                     <div class='card-top'>
-                                        <img src="paulImg.jpg" alt="member" id="member-image" class="member-image">
+                                        <img src="membersImage/paulImg.jpg" alt="member" id="member-image" class="member-image">
                                     </div>
                                     <div class='card-bottom'>
                                         <div class="member-name">Paul Lai</div>
@@ -118,30 +138,9 @@
 
                             </div>
                             <div class='contact-card'>
-                                <a href='' class='fa-brands fa-instagram'></a>
-                                <a href='' class='fab fa-linkedin'></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class='card'>
-                        <div class='parent-card'>
-                            <div class='member-card'>
-                                <div class='profile-card'>
-                                    <div class='card-top'>
-                                        <img src="paulImg.jpg" alt="member" id="member-image" class="member-image">
-                                    </div>
-                                    <div class='card-bottom'>
-                                        <div class="member-name">Paul Lai</div>
-                                        <div class="member-role">President</div>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class='contact-card'>
-                                <a>
-                                    <a href='' class='fa-brands fa-instagram'></a>
-                                </a>
+                                <a href='' class='fa-regular fa-envelope'></a>
+                                <a href='' class='fa-brands fa-linkedin'></a>
+                                <a href='' class='fa-brands fa-github'></a>
                             </div>
                         </div>
                     </div>
@@ -226,6 +225,20 @@
         </div>
 
 
+        <section id = 'memberslider'>
+            <div class = 'swiper' id = 'swiper1'>
+                <div class = 'swiper-wrapper'>
+
+                </div>
+            </div>
+    
+            <div class = 'swiper-pagination'>
+    
+            </div>
+        </section> 
+
+
+
 
 
     </section>
@@ -233,8 +246,26 @@
 
     <!-- Experience Section Starts-->
     <section class='gallery' id='gallery'>
-        <h1 class='heading'><span>Gallery </span></h1>
-
+            <div class = 'heading'>
+                <h3><span>Photo </span>Gallery</h3>
+            </div>
+            <div class = 'box'>
+                <div class = 'dream'>
+                    <img src = 'activityPhoto/1.jpg' alt = 'Paul'>
+                    <img src = 'activityPhoto/2.jpeg'>
+                    <img src = 'activityPhoto/3.jpeg'>
+                </div>
+                <div class = 'dream'>
+                    <img src = 'activityPhoto/1.jpg' alt = 'Paul'>
+                    <img src = 'activityPhoto/2.jpeg'>
+                    <img src = 'activityPhoto/3.jpeg'>
+                </div>
+                <div class = 'dream'>
+                    <img src = 'activityPhoto/1.jpg' alt = 'Paul'>
+                    <img src = 'activityPhoto/2.jpeg'>
+                    <img src = 'activityPhoto/3.jpeg'>
+                </div>
+            </div>
     </section>
     <!-- Experience Section Ends-->
 
@@ -274,9 +305,11 @@
 
     </section>
 
+
     <!-- Contact Me Section ends-->
 
     <script src="/script.js"> </script>
+    <script src = 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js'></script>
 </body>
 
 </html>
