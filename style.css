@@ -238,6 +238,7 @@ header img {
     list-style: none;
 }
 
+
 .members .member-navbar ul li a {
     position: relative;
     margin: 0 15px;
@@ -263,6 +264,7 @@ header img {
 #departmentContainer {
     text-align: center;
 }
+
 
 .departmentTitle {
     display: block;
@@ -384,6 +386,18 @@ header img {
 .gallery .heading span {
     text-transform: uppercase;
     color: var(--main--color)
+}
+
+.gallery .galleryTitle{
+    border-left: 13px solid var(--main--color);  /* Set the left border color to red */
+    height: 1.5em;
+    width: 33%;
+    background-image: linear-gradient(90deg, #000000, #ffffff);
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 25px; 
+    margin-left: 7rem;
+    margin-bottom: 10px;
+   
 }
 
 .gallery .box {
