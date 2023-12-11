@@ -127,12 +127,13 @@ header img {
     color: var(--main--color)
 }
 
-.home .content .info {
-    display: block;
-    font-size: 2.5rem;
-    color: #111;
-    padding: 0.5rem 0;
-    position: relative;
+.home .content .info {  
+    height: 1.5em;
+    width: 60%;
+    background-image: linear-gradient(90deg, #000000, #ffffff);
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 25px; 
+    padding-left: 1rem;
 }
 
 
@@ -206,6 +207,16 @@ header img {
 .members span {
     text-transform: uppercase;
     color: var(--main--color)
+}
+
+.members .membersTitle{
+    border-left: 13px solid var(--main--color);  /* Set the left border color to red */
+    height: 1.5em;
+    width: 60%;
+    background-image: linear-gradient(90deg, #000000, #ffffff);
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 25px; 
+    margin-left: 7rem;
 }
 
 .member-name {
